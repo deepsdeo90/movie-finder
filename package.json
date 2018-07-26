@@ -1,0 +1,31 @@
+{
+  "name": "movie-finder",
+  "version": "1.0.0",
+  "description": "a react app to find movies using flux",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deepsdeo90/movie-finder.git"
+  },
+  "author": "dipali",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "*",
+    "flux": "*",
+    "gulp": "*",
+    "reactify": "*",
+    "vinyl-source-stream": "*",
+    "object-assign": "*"
+  },
+  "depenedencies": {
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7"
+  },
+  "bugs": {
+    "url": "https://github.com/deepsdeo90/movie-finder/issues"
+  },
+  "homepage": "https://github.com/deepsdeo90/movie-finder#readme"
+}
