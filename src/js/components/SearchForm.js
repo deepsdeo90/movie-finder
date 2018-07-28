@@ -5,7 +5,8 @@ var AppStores = require('../stores/AppStores');
 var SearchForm = React.createClass({
 	render: function(){
 		return(
-			<div className="search-form card bg-light mb-3 text-center">
+			<div className="row">
+			<div className="search-form card bg-light mb-3 text-center col-md-6 offset-md-3 ">
 			<div  className="card-body">
 				<h1>Search for a Movie</h1>
 				<form onSubmit={this.onSubmit}>
@@ -14,6 +15,7 @@ var SearchForm = React.createClass({
 				</div>
 				<button className="btn btn-primary btn-lg" >Search Movies</button>
 				</form>
+			</div>
 			</div>
 			</div>
 			)

@@ -11,7 +11,10 @@ var _selected = '';
 
 var AppStore = assign({},EventEmitter.prototype, {
 	setMovieResults: function(movies){
-		_movies : movies
+
+		_movies = movies
+		console.log(_movies);
+		
 	},
 	getMovieResults: function(){
 		return _movies;
@@ -36,9 +39,9 @@ AppDispatcher.register(function(payload){
 			 AppStore.emit(CHANGE_EVENT);
 			 break;
 		case AppConstants.RECIVE_MOVIES_RESULTS:
-			 //console.log(action.movies);
 			 AppStore.setMovieResults(action.movies);	
 			 AppStore.emit(CHANGE_EVENT);
+			 console.log(_movies);
 			 break;
 			
 
